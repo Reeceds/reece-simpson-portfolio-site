@@ -1,0 +1,73 @@
+@import "variables";
+@import "mixins";
+@import "typography";
+
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: rubik-light;
+  font-weight: 100;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  color: $primary-text;
+  outline: none;
+  line-height: 1.5;
+}
+
+.container {
+  width: 1088px;
+  display: flex;
+
+  @include tablet {
+    max-width: 1088px;
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+}
+
+.btn {
+  &-lg {
+    text-transform: uppercase;
+    font-family: rubik-reg;
+    color: $secondary-text;
+    letter-spacing: 0.125rem;
+    font-size: 1.25rem;
+    padding: 1.125rem 4rem;
+  }
+
+  &-md {
+    text-transform: uppercase;
+    font-family: rubik-reg;
+    color: $secondary-text;
+    letter-spacing: 0.125rem;
+    font-size: 0.85rem;
+    padding: 1rem 3rem;
+  }
+}
+
+.tags {
+  &--light-green {
+    color: $light-green;
+  }
+
+  &--light-green-reg {
+    color: $light-green;
+    font-family: rubik-reg;
+  }
+
+  &--light-pink {
+    color: $light-pink;
+  }
+
+  &--light-pink-reg {
+    color: $light-pink;
+    font-family: rubik-reg;
+  }
+}
+
+.body-text-para {
+  margin-bottom: 1rem;
+}

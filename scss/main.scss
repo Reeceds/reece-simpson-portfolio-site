@@ -1,0 +1,329 @@
+@import "./partials/global";
+@import "./partials/variables";
+@import "./partials/mixins";
+@import "./partials/typography";
+
+// Hero section
+.hero {
+  background-color: $dark-green;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &-container {
+    flex-direction: column;
+  }
+
+  &-text-container {
+    max-width: 50rem;
+    margin-bottom: 3rem;
+  }
+  &-heading {
+    @include h1-desktop;
+    color: $secondary-text;
+    margin-bottom: 1.75rem;
+  }
+
+  &-text {
+    color: $secondary-text;
+    font-size: 1.75rem;
+    line-height: 1.4;
+  }
+
+  &-btn-green {
+    margin-right: 2rem;
+    border: 2px solid $light-green;
+    background-color: unset;
+    border-radius: 3rem;
+    transition: 0.25s ease-in-out;
+
+    &:hover {
+      background-color: $light-green;
+      color: $dark-green;
+    }
+
+    &:active {
+      background-color: unset;
+      color: $secondary-text;
+    }
+  }
+
+  &-btn-pink {
+    margin-right: 2rem;
+    border: 2px solid $light-pink;
+    background-color: unset;
+    border-radius: 3rem;
+    transition: 0.25s ease-in-out;
+
+    &:hover {
+      background-color: $light-pink;
+      color: $dark-green;
+    }
+
+    &:active {
+      background-color: unset;
+      color: $secondary-text;
+    }
+  }
+
+  &-icons-container {
+    margin-bottom: 3.5rem;
+  }
+
+  &-contact-icons {
+    height: 4rem;
+    margin-right: 3rem;
+    transition: 0.5s ease;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  &-arrow-icom {
+    height: 4rem;
+    position: absolute;
+    bottom: 40px;
+    animation: mymove 1.5s infinite;
+  }
+
+  @keyframes mymove {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+}
+
+// About section
+.about-me {
+  display: flex;
+  padding: 6rem 0;
+  justify-content: center;
+  align-items: center;
+
+  &-container {
+    justify-content: flex-end;
+  }
+
+  &-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+  }
+
+  &-image {
+    height: 100%;
+  }
+
+  &-text-container {
+    width: 60%;
+  }
+
+  &-heading {
+    @include h2-desktop;
+  }
+
+  &-text {
+    @include p-desktop;
+  }
+}
+
+// Skills section
+.skill {
+  display: flex;
+  padding: 6rem 0 4.5rem 0;
+  justify-content: center;
+  align-items: center;
+  background-color: $grey;
+
+  &-section-container {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &-section-heading {
+    @include h2-desktop;
+    margin-bottom: 3rem;
+  }
+
+  &-collection-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+  }
+
+  &-individual-container {
+    display: flex;
+    flex-direction: column;
+    height: 9.5rem;
+    width: 15rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+  }
+
+  &-icon-container {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  &-icon {
+    height: 7rem;
+    width: 100%;
+  }
+
+  &-name {
+    @include tags-desktop;
+  }
+}
+
+// Projects section
+.project {
+  display: flex;
+  padding: 6rem 0 7rem 0;
+  justify-content: center;
+  align-items: center;
+  background-color: $dark-pink;
+
+  &-section-container {
+    flex-direction: column;
+  }
+
+  &-section-heading {
+    @include h2-desktop;
+    color: $secondary-text;
+    margin-bottom: 3rem;
+  }
+
+  &-collection-container {
+    background-color: $secondary-text;
+    border-radius: 3rem;
+    padding: 4rem;
+    width: 100%;
+  }
+
+  &-individual-container {
+    display: flex;
+
+    @include tablet {
+      flex-wrap: wrap;
+    }
+  }
+
+  &-heading {
+    @include h3-desktop;
+  }
+
+  &-text-container {
+    padding-right: 3rem;
+  }
+
+  &-description {
+    margin-bottom: 1.75rem;
+  }
+
+  &-btn-container {
+    display: flex;
+  }
+
+  &-btn-green {
+    margin-right: 2rem;
+    background-color: $light-green;
+    border-radius: 3rem;
+    transition: 0.25s ease-in-out;
+    border: 2px solid $light-green;
+
+    &:hover {
+      background-color: unset;
+      color: $light-green;
+    }
+
+    &:active {
+      background-color: $light-green;
+      color: $secondary-text;
+    }
+  }
+
+  &-btn-pink {
+    margin-right: 2rem;
+    background-color: $light-pink;
+    border-radius: 3rem;
+    transition: 0.25s ease-in-out;
+    border: 2px solid $light-pink;
+
+    &:hover {
+      background-color: unset;
+      color: $light-pink;
+    }
+
+    &:active {
+      background-color: $light-pink;
+      color: $secondary-text;
+    }
+  }
+
+  &-image {
+    height: 20rem;
+  }
+
+  &-divider {
+    height: 1px;
+    background-color: lightgrey;
+    margin-bottom: 4rem;
+    margin-top: 3rem;
+  }
+}
+
+// Contact section
+.contact {
+  flex-direction: column;
+  display: flex;
+  padding: 2.5rem 0 3rem 0;
+  justify-content: center;
+  align-items: center;
+  background-color: $dark-green;
+
+  &-icon-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 350px;
+    margin-bottom: 1.25rem;
+  }
+
+  &-icon {
+    height: 2rem;
+  }
+
+  &-icon-circle {
+    background-color: #ffffff;
+    border-radius: 100%;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  &-email {
+    @include tags-desktop;
+    color: $secondary-text;
+  }
+}

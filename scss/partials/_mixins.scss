@@ -1,0 +1,53 @@
+@mixin tablet {
+  @media screen and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin bckgrnd__img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+@mixin hero {
+  @include bckgrnd__img;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+@mixin tags-desktop {
+  font-size: 1rem;
+  line-height: 1.4;
+  font-family: rubik-reg;
+}
+
+@mixin p-desktop {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+@mixin h1-desktop {
+  font-size: 3rem;
+  font-family: rubik-reg;
+}
+
+@mixin h2-desktop {
+  font-size: 2rem;
+  font-family: rubik-reg;
+  margin-bottom: 1rem;
+}
+
+@mixin h3-desktop {
+  font-size: 1.5rem;
+  font-family: rubik-reg;
+  margin-bottom: 1rem;
+}
