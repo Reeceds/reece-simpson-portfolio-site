@@ -63,6 +63,7 @@
 
     @include mobile {
       width: 100%;
+      margin-right: unset;
     }
   }
 
@@ -72,6 +73,7 @@
     &:hover {
       background-color: $light-green;
       color: $dark-green;
+      cursor: pointer;
     }
 
     &:active {
@@ -90,6 +92,7 @@
     &:hover {
       background-color: $light-pink;
       color: $dark-green;
+      cursor: pointer;
     }
 
     &:active {
@@ -118,6 +121,7 @@
 
     &:hover {
       opacity: 0.5;
+      cursor: pointer;
     }
   }
 
@@ -390,6 +394,7 @@
     &:hover {
       background-color: unset;
       color: $light-green;
+      cursor: pointer;
     }
 
     &:active {
@@ -413,6 +418,7 @@
     &:hover {
       background-color: unset;
       color: $light-pink;
+      cursor: pointer;
     }
 
     &:active {
@@ -462,12 +468,26 @@
     align-items: center;
   }
 
+  &-heading {
+    @include h3-desktop;
+    color: $secondary-text;
+    margin-bottom: 1.75rem;
+
+    @include mobile {
+      @include h3-mobile;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+  }
+
   &-icon-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
     max-width: 21.875rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.75rem;
     width: 100%;
   }
 
@@ -487,6 +507,7 @@
 
     &:hover {
       opacity: 0.5;
+      cursor: pointer;
     }
   }
 

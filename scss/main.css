@@ -31,6 +31,7 @@
   color: #323232;
   outline: none;
   line-height: 1.5;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -66,8 +67,8 @@
 
 @media screen and (max-width: 767px) {
   .btn-lg {
-    font-size: 1rem;
-    padding: 1.125rem 3.5rem;
+    font-size: 0.9rem;
+    padding: 1rem 3.5rem;
   }
 }
 
@@ -215,6 +216,7 @@
 @media screen and (max-width: 767px) {
   .hero-btn {
     width: 100%;
+    margin-right: unset;
   }
 }
 
@@ -225,6 +227,7 @@
 .hero-btn-green:hover {
   background-color: #14a098;
   color: #0f292f;
+  cursor: pointer;
 }
 
 .hero-btn-green:active {
@@ -245,6 +248,7 @@
 .hero-btn-pink:hover {
   background-color: #cb2d6f;
   color: #0f292f;
+  cursor: pointer;
 }
 
 .hero-btn-pink:active {
@@ -278,6 +282,7 @@
 
 .hero-contact-icons:hover {
   opacity: 0.5;
+  cursor: pointer;
 }
 
 .hero-arrow-icom {
@@ -716,6 +721,7 @@
 .project-btn-green:hover {
   background-color: unset;
   color: #14a098;
+  cursor: pointer;
 }
 
 .project-btn-green:active {
@@ -741,6 +747,7 @@
 .project-btn-pink:hover {
   background-color: unset;
   color: #cb2d6f;
+  cursor: pointer;
 }
 
 .project-btn-pink:active {
@@ -810,6 +817,31 @@
           align-items: center;
 }
 
+.contact-heading {
+  font-size: 1.5rem;
+  font-family: rubik-reg;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  margin-bottom: 1.75rem;
+}
+
+@media screen and (max-width: 767px) {
+  .contact-heading {
+    font-size: 1.25rem;
+    font-family: rubik-reg;
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+}
+
 .contact-icon-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -820,7 +852,7 @@
       -ms-flex-align: center;
           align-items: center;
   max-width: 21.875rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.75rem;
   width: 100%;
 }
 
@@ -848,6 +880,7 @@
 
 .contact-icon-circle:hover {
   opacity: 0.5;
+  cursor: pointer;
 }
 
 .contact-email {

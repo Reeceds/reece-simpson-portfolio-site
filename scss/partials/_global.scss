@@ -15,6 +15,7 @@
   color: $primary-text;
   outline: none;
   line-height: 1.5;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -43,8 +44,8 @@
     padding: 1.125rem 4rem;
 
     @include mobile {
-      font-size: 1rem;
-      padding: 1.125rem 3.5rem;
+      font-size: 0.9rem;
+      padding: 1rem 3.5rem;
     }
   }
 
