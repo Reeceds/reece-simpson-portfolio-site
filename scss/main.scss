@@ -19,25 +19,55 @@
   &-text-container {
     max-width: 50rem;
     margin-bottom: 3rem;
+
+    @include mobile {
+      margin-bottom: 2rem;
+    }
   }
+
   &-heading {
     @include h1-desktop;
     color: $secondary-text;
     margin-bottom: 1.75rem;
+
+    @include mobile {
+      margin-bottom: 1rem;
+      @include h1-mobile;
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 
   &-text {
     color: $secondary-text;
-    font-size: 1.75rem;
-    line-height: 1.4;
+    @include hero-text-desktop;
+
+    @include mobile {
+      @include hero-text-mobile;
+    }
   }
 
-  &-btn-green {
-    margin-right: 2rem;
-    border: 2px solid $light-green;
+  &-btn-container {
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      max-width: 25rem;
+    }
+  }
+
+  &-btn {
     background-color: unset;
     border-radius: 3rem;
     transition: 0.25s ease-in-out;
+    margin-right: 2rem;
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  &-btn-green {
+    border: 2px solid $light-green;
 
     &:hover {
       background-color: $light-green;
@@ -48,14 +78,14 @@
       background-color: unset;
       color: $secondary-text;
     }
+
+    @include mobile {
+      margin-bottom: 1.5rem;
+    }
   }
 
   &-btn-pink {
-    margin-right: 2rem;
     border: 2px solid $light-pink;
-    background-color: unset;
-    border-radius: 3rem;
-    transition: 0.25s ease-in-out;
 
     &:hover {
       background-color: $light-pink;
@@ -70,12 +100,21 @@
 
   &-icons-container {
     margin-bottom: 3.5rem;
+
+    @include mobile {
+      margin-bottom: 2rem;
+    }
   }
 
   &-contact-icons {
     height: 4rem;
     margin-right: 3rem;
     transition: 0.5s ease;
+
+    @include mobile {
+      height: 2.75rem;
+      margin-right: 1.25rem;
+    }
 
     &:hover {
       opacity: 0.5;
@@ -87,6 +126,11 @@
     position: absolute;
     bottom: 40px;
     animation: mymove 1.5s infinite;
+
+    @include mobile {
+      height: 3rem;
+      bottom: 20px;
+    }
   }
 
   @keyframes mymove {
@@ -109,6 +153,10 @@
   justify-content: center;
   align-items: center;
 
+  @include mobile {
+    padding: 3rem 0;
+  }
+
   &-container {
     justify-content: flex-end;
   }
@@ -118,6 +166,11 @@
     justify-content: center;
     align-items: center;
     width: 40%;
+    margin-right: 2.5rem;
+
+    @include tablet {
+      display: none;
+    }
   }
 
   &-image {
@@ -126,14 +179,33 @@
 
   &-text-container {
     width: 60%;
+
+    @include tablet {
+      width: unset;
+    }
   }
 
   &-heading {
     @include h2-desktop;
+
+    @include tablet {
+      text-align: center;
+    }
+
+    @include mobile {
+      @include h2-mobile;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   &-text {
     @include p-desktop;
+
+    @include mobile {
+      @include p-mobile;
+    }
   }
 }
 
@@ -145,6 +217,10 @@
   align-items: center;
   background-color: $grey;
 
+  @include mobile {
+    padding: 3rem 0 1.5rem 0;
+  }
+
   &-section-container {
     justify-content: center;
     flex-direction: column;
@@ -153,7 +229,14 @@
 
   &-section-heading {
     @include h2-desktop;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+
+    @include mobile {
+      @include h2-mobile;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   &-collection-container {
@@ -167,25 +250,38 @@
   &-individual-container {
     display: flex;
     flex-direction: column;
-    height: 9.5rem;
-    width: 15rem;
+    width: 14.4rem;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
+
+    @include mobile {
+      margin-bottom: 1.5rem;
+    }
   }
 
   &-icon-container {
     width: 7rem;
-    height: 7rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+    @include mobile {
+      height: 5rem;
+    }
   }
 
   &-icon {
-    height: 7rem;
     width: 100%;
   }
 
   &-name {
     @include tags-desktop;
+
+    @include mobile {
+      @include tags-mobile;
+    }
   }
 }
 
@@ -197,6 +293,10 @@
   align-items: center;
   background-color: $dark-pink;
 
+  @include mobile {
+    padding: 3rem 0 4rem 0;
+  }
+
   &-section-container {
     flex-direction: column;
   }
@@ -205,6 +305,19 @@
     @include h2-desktop;
     color: $secondary-text;
     margin-bottom: 3rem;
+    text-align: center;
+
+    @include tablet {
+      text-align: center;
+    }
+
+    @include mobile {
+      @include h2-mobile;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
   }
 
   &-collection-container {
@@ -212,22 +325,41 @@
     border-radius: 3rem;
     padding: 4rem;
     width: 100%;
+
+    @include mobile {
+      padding: 2.5rem 1.5rem;
+    }
   }
 
   &-individual-container {
     display: flex;
 
     @include tablet {
-      flex-wrap: wrap;
+      flex-wrap: wrap-reverse;
+      justify-content: center;
     }
   }
 
   &-heading {
     @include h3-desktop;
+
+    @include tablet {
+      text-align: center;
+    }
+
+    @include mobile {
+      @include h3-mobile;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   &-text-container {
     padding-right: 3rem;
+    @include tablet {
+      padding-right: unset;
+    }
   }
 
   &-description {
@@ -236,6 +368,16 @@
 
   &-btn-container {
     display: flex;
+
+    @include tablet {
+      justify-content: center;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      max-width: 25rem;
+      margin: 0 auto;
+    }
   }
 
   &-btn-green {
@@ -254,10 +396,15 @@
       background-color: $light-green;
       color: $secondary-text;
     }
+
+    @include mobile {
+      margin-right: unset;
+
+      margin-bottom: 1rem;
+    }
   }
 
   &-btn-pink {
-    margin-right: 2rem;
     background-color: $light-pink;
     border-radius: 3rem;
     transition: 0.25s ease-in-out;
@@ -275,7 +422,17 @@
   }
 
   &-image {
-    height: 20rem;
+    height: 19rem;
+
+    @include tablet {
+      margin-bottom: 1rem;
+    }
+
+    @include mobile {
+      width: 90%;
+      height: unset;
+      max-width: 23.71375rem;
+    }
   }
 
   &-divider {
@@ -283,6 +440,10 @@
     background-color: lightgrey;
     margin-bottom: 4rem;
     margin-top: 3rem;
+
+    @include mobile {
+      margin: 3rem 0;
+    }
   }
 }
 
@@ -295,12 +456,19 @@
   align-items: center;
   background-color: $dark-green;
 
+  &-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   &-icon-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 350px;
+    max-width: 21.875rem;
     margin-bottom: 1.25rem;
+    width: 100%;
   }
 
   &-icon {
@@ -325,5 +493,12 @@
   &-email {
     @include tags-desktop;
     color: $secondary-text;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include mobile {
+      @include tags-mobile;
+    }
   }
 }

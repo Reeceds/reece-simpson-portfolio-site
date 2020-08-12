@@ -1,5 +1,5 @@
 @mixin tablet {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1089px) {
     @content;
   }
 }
@@ -24,10 +24,16 @@
   padding: 0 1rem;
 }
 
+//Desktop / Tablet
 @mixin tags-desktop {
   font-size: 1rem;
   line-height: 1.4;
   font-family: rubik-reg;
+}
+
+@mixin hero-text-desktop {
+  font-size: 1.75rem;
+  line-height: 1.4;
 }
 
 @mixin p-desktop {
@@ -48,6 +54,40 @@
 
 @mixin h3-desktop {
   font-size: 1.5rem;
+  font-family: rubik-reg;
+  margin-bottom: 1rem;
+}
+
+// Mobile
+@mixin tags-mobile {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  font-family: rubik-reg;
+}
+
+@mixin hero-text-mobile {
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+@mixin p-mobile {
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+@mixin h1-mobile {
+  font-size: 2rem;
+  font-family: rubik-reg;
+}
+
+@mixin h2-mobile {
+  font-size: 1.625rem;
+  font-family: rubik-reg;
+  margin-bottom: 1rem;
+}
+
+@mixin h3-mobile {
+  font-size: 1.25rem;
   font-family: rubik-reg;
   margin-bottom: 1rem;
 }
