@@ -17,7 +17,7 @@
   }
 
   &-text-container {
-    max-width: 50rem;
+    max-width: 47rem;
     margin-bottom: 3rem;
 
     @include mobile {
@@ -48,8 +48,10 @@
   }
 
   &-btn-container {
+    display: flex;
+    flex-direction: row;
+
     @include mobile {
-      display: flex;
       flex-direction: column;
       max-width: 25rem;
     }
@@ -110,8 +112,8 @@
   }
 
   &-contact-icons {
-    height: 4rem;
-    margin-right: 3rem;
+    height: 3.5rem;
+    margin-right: 2.5rem;
     transition: 0.5s ease;
 
     @include mobile {
@@ -128,12 +130,11 @@
   &-arrow-icom {
     height: 4rem;
     position: absolute;
-    bottom: 40px;
+    bottom: 20px;
     animation: mymove 1.5s infinite;
 
     @include mobile {
-      height: 3rem;
-      bottom: 20px;
+      display: none;
     }
   }
 
@@ -165,25 +166,17 @@
     justify-content: flex-end;
   }
 
-  &-image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-    margin-right: 2.5rem;
+  &-image {
+    min-width: 20rem;
+    max-width: 20rem;
+    margin-right: 3rem;
 
     @include tablet {
       display: none;
     }
   }
 
-  &-image {
-    height: 100%;
-  }
-
   &-text-container {
-    width: 60%;
-
     @include tablet {
       width: unset;
     }
@@ -471,7 +464,7 @@
   &-heading {
     @include h3-desktop;
     color: $secondary-text;
-    margin-bottom: 1.75rem;
+    margin-bottom: 1.5rem;
 
     @include mobile {
       @include h3-mobile;
@@ -486,20 +479,20 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    max-width: 21.875rem;
+    max-width: 19rem;
     margin-bottom: 1.75rem;
     width: 100%;
   }
 
   &-icon {
-    height: 2rem;
+    height: 60%;
   }
 
   &-icon-circle {
     background-color: #ffffff;
     border-radius: 100%;
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 3rem;
+    height: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;

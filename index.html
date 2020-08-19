@@ -18,10 +18,10 @@
             >
           </h1>
           <p class="hero-text">
-            <span class="tags--light-green">&ltp class="intro"&gt</span>Lorem
-            Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's standard dummy text ever since
-            the 1500s.<span class="tags--light-green">&lt/p&gt</span>
+            <span class="tags--light-green">&ltp class="intro"&gt</span>A
+            full-stack Web Development graduate with experience in Graphic
+            Design. Building applications and making them look good at the same
+            time.<span class="tags--light-green">&lt/p&gt</span>
           </p>
         </div>
         <div class="hero-icons-container">
@@ -48,14 +48,16 @@
         </div>
 
         <div class="hero-btn-container">
-          <a href="#about-me"
-            ><button class="btn-lg hero-btn hero-btn-green">
+          <form action="#about-me">
+            <button type="submit" class="btn-lg hero-btn hero-btn-green">
               About Me
             </button>
-          </a>
-          <a href="#projects">
-            <button class="btn-lg hero-btn hero-btn-pink">Projects</button>
-          </a>
+          </form>
+          <form action="#projects">
+            <button type="submit" class="btn-lg hero-btn hero-btn-pink">
+              Projects
+            </button>
+          </form>
         </div>
       </div>
       <img class="hero-arrow-icom" src="./assets/icons/angle-down-solid.svg" />
@@ -64,32 +66,31 @@
     <!-- About Me section -->
     <section class="about-me" id="about-me">
       <div class="container about-me-container">
-        <div class="about-me-image-container">
-          <img
-            class="about-me-image"
-            src="./assets/icons/avatars/user-circle-regular.svg"
-          />
-        </div>
+        <img
+          class="about-me-image"
+          src="./assets/icons/avatars/user-circle-regular.svg"
+        />
         <div class="about-me-text-container">
           <h2 class="about-me-heading">
             <span class="tags--light-pink-reg">&lth2 class="title"></span>About
             Me<span class="tags--light-pink-reg">&lt/h2&gt</span>
           </h2>
           <p class="about-me-text body-text-para">
-            <span class="tags--light-green">&ltp class="bio"&gt</span>Lorem
-            Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's standard dummy text ever since
-            the 1500s. Lorem Ipsum is simply dummy text of the printing and
-            typesetting industry. Lorem Ipsum has been the industry's standard
-            dummy text ever since the 1500s.<span class="tags--light-green"
+            <span class="tags--light-green">&ltp class="bio"&gt</span>I recently
+            graduated from the BrainStation full-stack Web Development program.
+            My previous experience comes from my background as a Graphic
+            Designer and working as a Web/Design Assistant.<span
+              class="tags--light-green"
               >&lt/p&gt</span
             >
           </p>
           <p class="about-me-text">
-            <span class="tags--light-green">&ltp class="bio"&gt</span>Lorem
-            Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's standard dummy text ever since
-            the 1500s.<span class="tags--light-green">&lt/p&gt</span>
+            <span class="tags--light-green">&ltp class="bio"&gt</span>I decided
+            to make a career change when I realised that I looked forward to
+            learning how to write code in my spare time and that you can
+            actually do this as a job. My experience in design and my attention
+            to detail also allow me to put together consistent and visually
+            clean applications.<span class="tags--light-green">&lt/p&gt</span>
           </p>
         </div>
       </div>
@@ -295,7 +296,7 @@
           ></a>
         </div>
         <p class="contact-email">
-          <span class="tags--light-green-reg">&ltp class="email"&gt</span
+          <span class="tags--light-green-reg">&ltp id="email"&gt</span
           >reeceds147@gmail.com<span class="tags--light-green-reg"
             >&lt/p&gt</span
           >

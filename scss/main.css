@@ -149,7 +149,7 @@
 }
 
 .hero-text-container {
-  max-width: 50rem;
+  max-width: 47rem;
   margin-bottom: 3rem;
 }
 
@@ -169,7 +169,7 @@
 @media screen and (max-width: 767px) {
   .hero-heading {
     margin-bottom: 1rem;
-    font-size: 2rem;
+    font-size: 2.1rem;
     font-family: rubik-reg;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -192,11 +192,18 @@
   }
 }
 
+.hero-btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 @media screen and (max-width: 767px) {
   .hero-btn-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -267,8 +274,8 @@
 }
 
 .hero-contact-icons {
-  height: 4rem;
-  margin-right: 3rem;
+  height: 3.5rem;
+  margin-right: 2.5rem;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
@@ -288,15 +295,14 @@
 .hero-arrow-icom {
   height: 4rem;
   position: absolute;
-  bottom: 40px;
+  bottom: 20px;
   -webkit-animation: mymove 1.5s infinite;
           animation: mymove 1.5s infinite;
 }
 
 @media screen and (max-width: 767px) {
   .hero-arrow-icom {
-    height: 3rem;
-    bottom: 20px;
+    display: none;
   }
 }
 
@@ -349,32 +355,16 @@
           justify-content: flex-end;
 }
 
-.about-me-image-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 40%;
-  margin-right: 2.5rem;
+.about-me-image {
+  min-width: 20rem;
+  max-width: 20rem;
+  margin-right: 3rem;
 }
 
 @media screen and (max-width: 1089px) {
-  .about-me-image-container {
+  .about-me-image {
     display: none;
   }
-}
-
-.about-me-image {
-  height: 100%;
-}
-
-.about-me-text-container {
-  width: 60%;
 }
 
 @media screen and (max-width: 1089px) {
@@ -822,7 +812,7 @@
   font-family: rubik-reg;
   margin-bottom: 1rem;
   color: #ffffff;
-  margin-bottom: 1.75rem;
+  margin-bottom: 1.5rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -851,20 +841,20 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 21.875rem;
+  max-width: 19rem;
   margin-bottom: 1.75rem;
   width: 100%;
 }
 
 .contact-icon {
-  height: 2rem;
+  height: 60%;
 }
 
 .contact-icon-circle {
   background-color: #ffffff;
   border-radius: 100%;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3rem;
+  height: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
