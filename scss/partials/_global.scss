@@ -56,6 +56,7 @@
     letter-spacing: 0.125rem;
     font-size: 0.85rem;
     padding: 0.8rem 2rem;
+    min-width: 10rem;
   }
 }
 
@@ -81,4 +82,11 @@
 
 .body-text-para {
   margin-bottom: 1rem;
+}
+
+.input-field {
+  border-radius: 0.2rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
 }

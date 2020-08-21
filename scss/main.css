@@ -79,6 +79,7 @@
   letter-spacing: 0.125rem;
   font-size: 0.85rem;
   padding: 0.8rem 2rem;
+  min-width: 10rem;
 }
 
 .tags--light-green {
@@ -101,6 +102,13 @@
 
 .body-text-para {
   margin-bottom: 1rem;
+}
+
+.input-field {
+  border-radius: 0.2rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
 }
 
 @font-face {
@@ -358,7 +366,7 @@
 .about-me-image {
   min-width: 20rem;
   max-width: 20rem;
-  margin-right: 3rem;
+  margin-right: 5rem;
 }
 
 @media screen and (max-width: 1089px) {
@@ -777,6 +785,129 @@
 }
 
 .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 6rem 0 7rem 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #14a098;
+}
+
+@media screen and (max-width: 767px) {
+  .contact {
+    padding: 3rem 0 4rem 0;
+  }
+}
+
+.contact-section-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-section-heading {
+  font-size: 2rem;
+  font-family: rubik-reg;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 1089px) {
+  .contact-section-heading {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact-section-heading {
+    font-size: 1.625rem;
+    font-family: rubik-reg;
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 800px;
+}
+
+@media screen and (max-width: 1089px) {
+  .contact-form {
+    width: 100%;
+    max-width: 800px;
+  }
+}
+
+.contact-input-field {
+  width: 48.75%;
+}
+
+@media screen and (max-width: 767px) {
+  .contact-input-field {
+    width: 100%;
+  }
+}
+
+.contact-input-message-field {
+  width: 100%;
+  resize: none;
+}
+
+.contact-btn-pink {
+  background-color: #cb2d6f;
+  border-radius: 3rem;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+  border: 2px solid #cb2d6f;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.contact-btn-pink:hover {
+  background-color: unset;
+  color: #cb2d6f;
+  cursor: pointer;
+}
+
+.contact-btn-pink:active {
+  background-color: #cb2d6f;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .contact-btn-pink {
+    width: 100%;
+  }
+}
+
+.footer {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -784,7 +915,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 2.5rem 0 3rem 0;
+  padding: 3rem 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -794,7 +925,7 @@
   background-color: #0f292f;
 }
 
-.contact-container {
+.footer-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -807,7 +938,7 @@
           align-items: center;
 }
 
-.contact-heading {
+.footer-heading {
   font-size: 1.5rem;
   font-family: rubik-reg;
   margin-bottom: 1rem;
@@ -816,7 +947,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .contact-heading {
+  .footer-heading {
     font-size: 1.25rem;
     font-family: rubik-reg;
     margin-bottom: 1rem;
@@ -832,7 +963,7 @@
   }
 }
 
-.contact-icon-container {
+.footer-icon-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -846,11 +977,11 @@
   width: 100%;
 }
 
-.contact-icon {
+.footer-icon {
   height: 60%;
 }
 
-.contact-icon-circle {
+.footer-icon-circle {
   background-color: #ffffff;
   border-radius: 100%;
   width: 3rem;
@@ -868,12 +999,12 @@
   transition: 0.5s ease;
 }
 
-.contact-icon-circle:hover {
+.footer-icon-circle:hover {
   opacity: 0.5;
   cursor: pointer;
 }
 
-.contact-email {
+.footer-email {
   font-size: 1rem;
   line-height: 1.4;
   font-family: rubik-reg;
@@ -889,7 +1020,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .contact-email {
+  .footer-email {
     font-size: 0.875rem;
     line-height: 1.4;
     font-family: rubik-reg;

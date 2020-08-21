@@ -256,46 +256,80 @@
 
     <!-- Contact section -->
     <section class="contact">
-      <div class="container contact-container">
-        <h3 class="contact-heading">
-          <span class="tags--light-pink-reg">&lth3 class="title"></span>Contact
-          Me<span class="tags--light-pink-reg">&lt/h3&gt</span>
-        </h3>
-        <div class="contact-icon-container">
+      <div class="container contact-section-container">
+        <h2 class="contact-section-heading">
+          <span class="tags--light-pink-reg">&lth2 class="title"></span>Message
+          Me<span class="tags--light-pink-reg">&lt/h2&gt</span>
+        </h2>
+        <form
+          class="contact-form"
+          method="POST"
+          action="https://formspree.io/mjvadyyy"
+        >
+          <input
+            class="input-field contact-input-field"
+            type="text"
+            placeholder="Name"
+            name="Name"
+            required
+          />
+          <input
+            class="input-field contact-input-field"
+            type="email"
+            placeholder="Email"
+            name="Email"
+            required
+          />
+          <textarea
+            class="input-field contact-input-message-field"
+            placeholder="Message"
+            rows="10"
+            name="Message"
+            required
+          ></textarea>
+          <button class="btn-md contact-btn-pink" value="send">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+      <div class="container footer-container">
+        <div class="footer-icon-container">
           <a
             href="https://www.linkedin.com/in/reece-d-simpson/"
             target="_blank"
           >
-            <div class="contact-icon-circle">
+            <div class="footer-icon-circle">
               <img
-                class="contact-icon"
+                class="footer-icon"
                 src="assets/icons/contact/linkedin-brands.svg"
               /></div
           ></a>
           <a href="https://github.com/Reeceds" target="_blank">
-            <div class="contact-icon-circle">
+            <div class="footer-icon-circle">
               <img
-                class="contact-icon"
+                class="footer-icon"
                 src="assets/icons/contact/github-brands.svg"
               />
             </div>
           </a>
           <a href="#" target="_blank">
-            <div class="contact-icon-circle">
+            <div class="footer-icon-circle">
               <img
-                class="contact-icon"
+                class="footer-icon"
                 src="assets/icons/contact/file-alt-solid.svg"
               /></div
           ></a>
           <a href="mailto:reeceds147@gmail.com" target="_blank">
-            <div class="contact-icon-circle">
+            <div class="footer-icon-circle">
               <img
-                class="contact-icon"
+                class="footer-icon"
                 src="assets/icons/contact/envelope-solid.svg"
               /></div
           ></a>
         </div>
-        <p class="contact-email">
+        <p class="footer-email">
           <span class="tags--light-green-reg">&ltp id="email"&gt</span
           >reeceds147@gmail.com<span class="tags--light-green-reg"
             >&lt/p&gt</span
