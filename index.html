@@ -3,7 +3,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reece Simpson</title>
-
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+    crossorigin="anonymous"
+  />
     <link href="./scss/main.css" type="text/css" rel="stylesheet" />
   </head>
   <body>
@@ -40,7 +45,7 @@
               class="hero-contact-icons"
               src="assets/icons/contact/file-alt-solid.svg"
           /></a>
-          <a class="slide-up-four" href="mailto:reeceds147@gmail.com" target="_blank"
+          <a class="slide-up-four" href="#email-section" 
             ><img
               class="hero-contact-icons"
               src="assets/icons/contact/envelope-solid.svg"
@@ -200,61 +205,131 @@
           >Projects<span class="tags--light-green-reg">&lt/h2&gt</span>
         </h2>
         <div class="project-collection-container">
-          <!-- Project 1 -->
-          <div class="project-individual-container">
-            <div class="project-text-container">
-              <h3 class="project-heading">
-                <span class="tags--light-pink-reg">&lth3 class="proj"></span
-                >Project 1<span class="tags--light-pink-reg">&lt/h3&gt</span>
-              </h3>
-              <p class="project-description">
-                <span class="tags--light-green"
-                  >&ltp class="description"&gt</span
-                >Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry. Lorem Ipsum has been the industry's
-                standard dummy text ever since the 1500s. Lorem Ipsum is simply
-                dummy text of the printing and typesetting industry. Lorem Ipsum
-                has been the industry's standard dummy text ever since the
-                1500s.<span class="tags--light-green">&lt/p&gt</span>
-              </p>
-              <div class="project-btn-container">
-                <button class="btn-md project-btn-green">Do Something</button>
-                <button class="btn-md project-btn-pink">Do Something</button>
+          <!-- carousel -->
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-ride="carousel"
+            data-interval="8000"
+          >
+            <div class="carousel-inner">
+              
+              <div class="carousel-item active">
+                <!-- Project 1 -->
+                <div class="project-individual-container">
+                  <div class="project-text-container">
+                    <h3 class="project-heading">
+                      <span class="tags--light-pink-reg">&lth3 class="proj"></span
+                      >Project 1<span class="tags--light-pink-reg">&lt/h3&gt</span>
+                    </h3>
+                    <p class="project-description">
+                      <span class="tags--light-green"
+                        >&ltp class="description"&gt</span
+                      >Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s. Lorem Ipsum is simply
+                      dummy text of the printing and typesetting industry. Lorem Ipsum
+                      has been the industry's standard dummy text ever since the
+                      1500s.<span class="tags--light-green">&lt/p&gt</span>
+                    </p>
+                    <div class="project-btn-container">
+                      <button class="btn-md project-btn-green">Do Something</button>
+                      <button class="btn-md project-btn-pink">Do Something</button>
+                    </div>
+                  </div>
+                  <img class="project-image" src="./assets/images/imac.png" />
+                </div>
               </div>
-            </div>
-            <img class="project-image" src="./assets/images/imac.png" />
-          </div>
-          <div class="project-divider"></div>
 
-          <!-- Project 2 -->
-          <div class="project-individual-container">
-            <div class="project-text-container">
-              <h3 class="project-heading">
-                <span class="tags--light-pink-reg">&lth3 class="proj"></span
-                >Project 2<span class="tags--light-pink-reg">&lt/h3&gt</span>
-              </h3>
-              <p class="project-description">
-                <span class="tags--light-green"
-                  >&ltp class="description"&gt</span
-                >Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry. Lorem Ipsum has been the industry's
-                standard dummy text ever since the 1500s. Lorem Ipsum is simply
-                dummy text of the printing and typesetting industry. Lorem Ipsum
-                has been the industry's standard dummy text ever since the
-                1500s.<span class="tags--light-green">&lt/p&gt</span>
-              </p>
-              <div class="project-btn-container">
-                <button class="btn-md project-btn-green">Do Something</button>
-                <button class="btn-md project-btn-pink">Do Something</button>
+              <div class="carousel-item">
+                <!-- Project 2 -->
+                <div class="project-individual-container">
+                  <div class="project-text-container">
+                    <h3 class="project-heading">
+                      <span class="tags--light-pink-reg">&lth3 class="proj"></span
+                      >Project 2<span class="tags--light-pink-reg">&lt/h3&gt</span>
+                    </h3>
+                    <p class="project-description">
+                      <span class="tags--light-green"
+                        >&ltp class="description"&gt</span
+                      >Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s. Lorem Ipsum is simply
+                      dummy text of the printing and typesetting industry. Lorem Ipsum
+                      has been the industry's standard dummy text ever since the
+                      1500s.<span class="tags--light-green">&lt/p&gt</span>
+                    </p>
+                    <div class="project-btn-container">
+                      <button class="btn-md project-btn-green">Do Something</button>
+                      <button class="btn-md project-btn-pink">Do Something</button>
+                    </div>
+                  </div>
+                  <img class="project-image" src="./assets/images/iphone.png" />
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <!-- Project 3 -->
+                <div class="project-individual-container">
+                  <div class="project-text-container">
+                    <h3 class="project-heading">
+                      <span class="tags--light-pink-reg">&lth3 class="proj"></span
+                      >Project 3<span class="tags--light-pink-reg">&lt/h3&gt</span>
+                    </h3>
+                    <p class="project-description">
+                      <span class="tags--light-green"
+                        >&ltp class="description"&gt</span
+                      >Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s. Lorem Ipsum is simply
+                      dummy text of the printing and typesetting industry. Lorem Ipsum
+                      has been the industry's standard dummy text ever since the
+                      1500s.<span class="tags--light-green">&lt/p&gt</span>
+                    </p>
+                    <div class="project-btn-container">
+                      <button class="btn-md project-btn-green">Do Something</button>
+                      <button class="btn-md project-btn-pink">Do Something</button>
+                    </div>
+                  </div>
+                  <img class="project-image" src="./assets/images/imac.png" />
+                </div>
+              </div>
+              
               </div>
             </div>
-            <img class="project-image" src="./assets/images/imac.png" />
+            <div class="carousel-control-container">
+              <a
+                class="carousel-control-prev"
+                href="#carouselExampleControls"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#carouselExampleControls"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Contact section -->
+    <a name="email-section"></a>
     <section class="contact">
       <div class="container contact-section-container">
         <h2 class="contact-section-heading">
@@ -293,7 +368,7 @@
     </section>
 
     <!-- Footer -->
-    <section class="footer">
+    <section class="footer" id="email-section">
       <div class="container footer-container">
         <div class="footer-icon-container">
           <a
@@ -338,6 +413,16 @@
       </div>
     </section>
   </body>
+  <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
   <script src="https://unpkg.com/scrollreveal"></script>
 
   <script src="./js/index.js"></script>

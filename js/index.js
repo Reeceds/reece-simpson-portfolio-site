@@ -47,3 +47,24 @@ ScrollReveal().reveal(".slide-up-seven", slideUp(1500));
 //     console.log(name[i]);
 //   }, 500 * i);
 // }
+
+// const ex = (num) => {
+//   return new Promise((resolve, reject) => {
+//     if (ex > 4) {
+//       resolve(`${num} is more than 4`);
+//     } else {
+//       reject(`${num} is less than 4`);
+//     }
+//   });
+// };
+
+// const prom = async (boi) => {
+//   try {
+//     const response = await ex(boi);
+//     console.log(response);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };
+
+// prom(8);

@@ -654,13 +654,19 @@
 .project-collection-container {
   background-color: #ffffff;
   border-radius: 3rem;
-  padding: 4rem;
+  padding: 4rem 0;
   width: 100%;
+}
+
+@media screen and (max-width: 1089px) {
+  .project-collection-container {
+    padding: 4rem 0;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .project-collection-container {
-    padding: 2.5rem 1.5rem;
+    padding: 2.5rem 0;
   }
 }
 
@@ -668,6 +674,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 @media screen and (max-width: 1089px) {
@@ -677,6 +685,15 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .project-individual-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
 
@@ -1065,5 +1082,49 @@
     line-height: 1.4;
     font-family: rubik-reg;
   }
+}
+
+.carousel-control-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 1089px) {
+  .carousel-control-container {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .carousel-control-container {
+    margin-top: 2rem;
+  }
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  position: unset;
+  width: 6rem;
+  min-width: 5rem;
+}
+
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  max-width: unset;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 /*# sourceMappingURL=main.css.map */
