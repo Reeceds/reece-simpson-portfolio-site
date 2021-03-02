@@ -3,13 +3,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reece Simpson</title>
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-    crossorigin="anonymous"
-  />
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
     <link href="./scss/main.css" type="text/css" rel="stylesheet" />
+    
   </head>
   <body>
     <!-- Hero section -->
@@ -121,6 +117,7 @@
               >HTML<span class="tags--light-pink-reg">&lt/li&gt</span>
             </p>
           </div>
+
           <div class="skill-individual-container slide-up-two">
             <div class="skill-icon-container">
               <img
@@ -133,6 +130,7 @@
               >CSS<span class="tags--light-pink-reg">&lt/li&gt</span>
             </p>
           </div>
+
           <div class="skill-individual-container slide-up-three">
             <div class="skill-icon-container">
               <img
@@ -145,7 +143,21 @@
               >Javascript<span class="tags--light-pink-reg">&lt/li&gt</span>
             </p>
           </div>
+
           <div class="skill-individual-container slide-up-four">
+            <div class="skill-icon-container">
+              <img
+                class="skill-icon"
+                src="./assets/icons/skills/C_Sharp_logo.svg"
+              />
+            </div>
+            <p class="skill-name">
+              <span class="tags--light-pink-reg">&ltli class="skill"></span
+              >C#<span class="tags--light-pink-reg">&lt/li&gt</span>
+            </p>
+          </div>
+
+          <div class="skill-individual-container">
             <div class="skill-icon-container">
               <img
                 class="skill-icon"
@@ -157,7 +169,8 @@
               >SASS<span class="tags--light-pink-reg">&lt/li&gt</span>
             </p>
           </div>
-          <div class="skill-individual-container slide-up-five">
+
+          <div class="skill-individual-container">
             <div class="skill-icon-container">
               <img
                 class="skill-icon"
@@ -169,7 +182,8 @@
               >React<span class="tags--light-pink-reg">&lt/li&gt</span>
             </p>
           </div>
-          <div class="skill-individual-container slide-up-six">
+
+          <div class="skill-individual-container">
             <div class="skill-icon-container">
               <img
                 class="skill-icon"
@@ -181,7 +195,8 @@
               JS<span class="tags--light-pink-reg">&lt/li&gt</span>
             </p>
           </div>
-          <div class="skill-individual-container slide-up-seven">
+
+          <div class="skill-individual-container">
             <div class="skill-icon-container">
               <img
                 class="skill-icon"
@@ -193,7 +208,21 @@
               >Express<span class="tags--light-pink-reg">&lt/li&gt</span>
             </p>
           </div>
+
+          <div class="skill-individual-container">
+            <div class="skill-icon-container">
+              <img
+                class="skill-icon"
+                src="./assets/icons/skills/NET_Core_Logo.svg"
+              />
+            </div>
+            <p class="skill-name">
+              <span class="tags--light-pink-reg">&ltli class="skill"></span
+              >.NET Core<span class="tags--light-pink-reg">&lt/li&gt</span>
+            </p>
+          </div>
         </div>
+        <a class="btn-md skill-btn-green showMore"></a>
       </div>
     </section>
 
@@ -210,90 +239,66 @@
             id="carouselExampleControls"
             class="carousel slide"
             data-ride="carousel"
-            data-interval="8000"
+            data-interval="4000"
           >
             <div class="carousel-inner">
               
               <div class="carousel-item active">
                 <!-- Project 1 -->
                 <div class="project-individual-container">
-                  <div class="project-text-container">
-                    <h3 class="project-heading">
-                      <span class="tags--light-pink-reg">&lth3 class="proj"></span
-                      >Project 1<span class="tags--light-pink-reg">&lt/h3&gt</span>
-                    </h3>
-                    <p class="project-description">
-                      <span class="tags--light-green"
-                        >&ltp class="description"&gt</span
-                      >Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s. Lorem Ipsum is simply
-                      dummy text of the printing and typesetting industry. Lorem Ipsum
-                      has been the industry's standard dummy text ever since the
-                      1500s.<span class="tags--light-green">&lt/p&gt</span>
-                    </p>
+                  <div class="project-details-container">
+                    <div class="project-text-container">
+                      <h3 class="project-heading">
+                        <span class="tags--light-pink-reg">&lth3 class="proj"></span
+                          >Big Blog<span class="tags--light-pink-reg">&lt/h3&gt</span>
+                        </h3>
+                        <h4 class="project-tech">
+                          <span class="tags--light-green-reg"
+                          >&lth4 class="tech"&gt</span>C# // .NET Core // SQLite<span class="tags--light-green-reg">&lt/h4&gt</span>
+                        </h4>
+                        <p class="project-description">
+                          <span class="tags--light-green"
+                          >&ltp class="description"&gt</span
+                          >Big Blog is a blogging website with CRUD functionality, this includes a basic working Auth to login/logout to the admin panel where you can perform CRUD operations which are saved to a database. The application follows a MVC design pattern. <em>( Login = Username: admin / Password: password ...shhhh ).</em><span class="tags--light-green">&lt/p&gt</span>
+                        </p>
+                      </div>
                     <div class="project-btn-container">
-                      <button class="btn-md project-btn-green">Do Something</button>
-                      <button class="btn-md project-btn-pink">Do Something</button>
+                      <a href="https://big-blog.azurewebsites.net/" target="_blank"><button class="btn-md project-btn-green">Visit</button></a>
+                      <a href="https://github.com/Reeceds/ASP.NET-Core-Blog-main" target="_blank"><button class="btn-md project-btn-pink">GitHub repo</button></a>
                     </div>
                   </div>
-                  <img class="project-image" src="./assets/images/imac.png" />
+                  <img class="project-image" src="./assets/images/Big-Blog-imac.png" />
                 </div>
               </div>
 
               <div class="carousel-item">
                 <!-- Project 2 -->
                 <div class="project-individual-container">
-                  <div class="project-text-container">
-                    <h3 class="project-heading">
-                      <span class="tags--light-pink-reg">&lth3 class="proj"></span
-                      >Project 2<span class="tags--light-pink-reg">&lt/h3&gt</span>
-                    </h3>
-                    <p class="project-description">
-                      <span class="tags--light-green"
-                        >&ltp class="description"&gt</span
-                      >Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s. Lorem Ipsum is simply
-                      dummy text of the printing and typesetting industry. Lorem Ipsum
-                      has been the industry's standard dummy text ever since the
-                      1500s.<span class="tags--light-green">&lt/p&gt</span>
-                    </p>
+                  <div class="project-details-container">
+                    <div class="project-text-container">
+                      <h3 class="project-heading">
+                        <span class="tags--light-pink-reg">&lth3 class="proj"></span
+                          >BrainFlix<span class="tags--light-pink-reg">&lt/h3&gt</span>
+                        </h3>
+                        <h4 class="project-tech">
+                          <span class="tags--light-green-reg"
+                          >&lth4 class="tech"&gt</span>React // Sass // Node.js // Express<span class="tags--light-green-reg">&lt/h4&gt</span>
+                        </h4>
+                        <p class="project-description">
+                          <span class="tags--light-green"
+                          >&ltp class="description"&gt</span
+                          >BrainFlix is an example of a video sharing platform. The application includes the functionality of being able to select different videos to be displayed as the main video, along with their unique information which is stored in a seeded data file. You can also add a new entry from the upload page.</em><span class="tags--light-green">&lt/p&gt</span>
+                        </p>
+                      </div>
                     <div class="project-btn-container">
-                      <button class="btn-md project-btn-green">Do Something</button>
-                      <button class="btn-md project-btn-pink">Do Something</button>
+                      <a href="https://brainflix-app.herokuapp.com/" target="_blank"><button class="btn-md project-btn-green">Visit</button></a>
+                      <a href="https://github.com/Reeceds/Reece-Simpson-BrainFlix/tree/master/Sprint3" target="_blank"><button class="btn-md project-btn-pink">GitHub repo</button></a>
                     </div>
                   </div>
-                  <img class="project-image" src="./assets/images/iphone.png" />
+                  <img class="project-image" src="./assets/images/BrainFlix-imac.png" />
                 </div>
               </div>
 
-              <div class="carousel-item">
-                <!-- Project 3 -->
-                <div class="project-individual-container">
-                  <div class="project-text-container">
-                    <h3 class="project-heading">
-                      <span class="tags--light-pink-reg">&lth3 class="proj"></span
-                      >Project 3<span class="tags--light-pink-reg">&lt/h3&gt</span>
-                    </h3>
-                    <p class="project-description">
-                      <span class="tags--light-green"
-                        >&ltp class="description"&gt</span
-                      >Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s. Lorem Ipsum is simply
-                      dummy text of the printing and typesetting industry. Lorem Ipsum
-                      has been the industry's standard dummy text ever since the
-                      1500s.<span class="tags--light-green">&lt/p&gt</span>
-                    </p>
-                    <div class="project-btn-container">
-                      <button class="btn-md project-btn-green">Do Something</button>
-                      <button class="btn-md project-btn-pink">Do Something</button>
-                    </div>
-                  </div>
-                  <img class="project-image" src="./assets/images/imac.png" />
-                </div>
-              </div>
               
               </div>
             </div>
@@ -413,17 +418,8 @@
       </div>
     </section>
   </body>
-  <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-      crossorigin="anonymous"
-    ></script>
-  <script src="https://unpkg.com/scrollreveal"></script>
-
+  <script type="text/javascript" src="./assets/j-query/jquery-3.5.1.slim.min.js"></script>
+    <script type="text/javascript" src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal@4.0.7/dist/scrollreveal.min.js"></script>
   <script src="./js/index.js"></script>
 </html>

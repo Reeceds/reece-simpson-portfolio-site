@@ -60,6 +60,12 @@
   margin-bottom: 1rem;
 }
 
+@mixin h4-desktop {
+  font-size: 1.175rem;
+  font-family: rubik-reg;
+  margin-bottom: 1rem;
+}
+
 // Mobile
 @mixin tags-mobile {
   font-size: 0.875rem;

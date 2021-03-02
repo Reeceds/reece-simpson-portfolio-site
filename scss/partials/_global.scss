@@ -13,9 +13,12 @@
   text-decoration: none;
   list-style-type: none;
   color: $primary-text;
-  outline: none;
   line-height: 1.5;
   scroll-behavior: smooth;
+}
+
+button {
+  outline: none !important;
 }
 
 .container {
@@ -84,9 +87,27 @@
   margin-bottom: 1rem;
 }
 
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
 .input-field {
   border-radius: 0.2rem;
   padding: 1rem;
   margin-bottom: 1rem;
   font-size: 0.875rem;
+}
+
+a.showMore {
+  text-align: center;
+  text-decoration: none;
+
+  &::after {
+    content: "view more";
+  }
+
+  &.showLess::after {
+    content: "view less";
+  }
 }

@@ -209,13 +209,13 @@
 // Skills section
 .skill {
   display: flex;
-  padding: 6rem 0 4.5rem 0;
+  padding: 6rem 0;
   justify-content: center;
   align-items: center;
   background-color: $grey;
 
   @include mobile {
-    padding: 3rem 0 1.5rem 0;
+    padding: 3rem 0;
   }
 
   &-section-container {
@@ -242,6 +242,7 @@
     justify-content: center;
     align-items: center;
     max-width: 1000px;
+    margin-bottom: 1rem;
   }
 
   &-individual-container {
@@ -278,6 +279,29 @@
 
     @include mobile {
       @include tags-mobile;
+    }
+  }
+
+  &-btn-green {
+    background-color: $light-green;
+    border-radius: 3rem;
+    transition: 0.25s ease-in-out;
+    border: 2px solid $light-green;
+    margin: 0 auto;
+
+    &:hover {
+      background-color: unset;
+      color: $light-green;
+      cursor: pointer;
+    }
+
+    &:active {
+      background-color: $light-green;
+      color: $secondary-text;
+    }
+
+    @include mobile {
+      width: 100%;
     }
   }
 }
@@ -365,10 +389,38 @@
     }
   }
 
-  &-text-container {
+  &-tech {
+    @include h4-desktop;
+
+    @include tablet {
+      text-align: center;
+    }
+
+    @include mobile {
+      @include h3-mobile;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &-details-container {
     padding-right: 3rem;
+
     @include tablet {
       padding-right: unset;
+    }
+  }
+
+  &-text-container {
+    min-height: 18.75rem;
+
+    @include tablet {
+      min-height: 15.75rem;
+    }
+
+    @include mobile {
+      height: unset;
     }
   }
 
@@ -396,6 +448,7 @@
     border-radius: 3rem;
     transition: 0.25s ease-in-out;
     border: 2px solid $light-green;
+    min-width: 11.5rem;
 
     &:hover {
       background-color: unset;
@@ -410,7 +463,7 @@
 
     @include mobile {
       margin-right: unset;
-
+      width: 100%;
       margin-bottom: 1rem;
     }
   }
@@ -420,6 +473,7 @@
     border-radius: 3rem;
     transition: 0.25s ease-in-out;
     border: 2px solid $light-pink;
+    min-width: 11.5rem;
 
     &:hover {
       background-color: unset;
@@ -430,6 +484,10 @@
     &:active {
       background-color: $light-pink;
       color: $secondary-text;
+    }
+
+    @include mobile {
+      width: 100%;
     }
   }
 
