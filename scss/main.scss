@@ -12,6 +12,11 @@
   align-items: center;
   flex-direction: column;
 
+  @include mobile {
+    height: unset;
+    padding: 3rem 0;
+  }
+
   &-container {
     flex-direction: column;
   }
@@ -44,6 +49,7 @@
 
     @include mobile {
       @include hero-text-mobile;
+      margin-bottom: unset;
     }
   }
 
@@ -54,6 +60,7 @@
     @include mobile {
       flex-direction: column;
       max-width: 25rem;
+      margin-bottom: 1.125rem;
     }
   }
 
@@ -107,7 +114,7 @@
     margin-bottom: 3.5rem;
 
     @include mobile {
-      margin-bottom: 2rem;
+      margin-bottom: 2.5rem;
     }
   }
 
@@ -499,8 +506,8 @@
     }
 
     @include mobile {
-      width: 90%;
-      height: unset;
+      width: 100%;
+      height: auto;
       max-width: 23.71375rem;
     }
   }
