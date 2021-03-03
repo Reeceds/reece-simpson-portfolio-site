@@ -39,6 +39,7 @@ jQuery(document).ready(function () {
   $(".skill-collection-container .skill-individual-container")
     .slice(0, 4)
     .addClass("shown");
+
   $(".skill-collection-container .skill-individual-container")
     .not(".shown")
     .hide();

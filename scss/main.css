@@ -247,6 +247,7 @@ a.showMore.showLess::after {
     margin-bottom: 1rem;
     font-size: 2.1rem;
     font-family: rubik-reg;
+    line-height: 1.5;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -468,6 +469,7 @@ a.showMore.showLess::after {
     font-size: 1.625rem;
     font-family: rubik-reg;
     margin-bottom: 1rem;
+    line-height: 1.5;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -536,6 +538,7 @@ a.showMore.showLess::after {
     font-size: 1.625rem;
     font-family: rubik-reg;
     margin-bottom: 1rem;
+    line-height: 1.5;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -696,6 +699,7 @@ a.showMore.showLess::after {
     font-size: 1.625rem;
     font-family: rubik-reg;
     margin-bottom: 1rem;
+    line-height: 1.5;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -771,6 +775,7 @@ a.showMore.showLess::after {
     font-size: 1.25rem;
     font-family: rubik-reg;
     margin-bottom: 1rem;
+    line-height: 1.5;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -796,9 +801,10 @@ a.showMore.showLess::after {
 
 @media screen and (max-width: 767px) {
   .project-tech {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-family: rubik-reg;
     margin-bottom: 1rem;
+    line-height: 1.5rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -811,12 +817,14 @@ a.showMore.showLess::after {
 }
 
 .project-details-container {
-  padding-right: 3rem;
+  margin-right: 3rem;
+  width: 516px;
 }
 
 @media screen and (max-width: 1089px) {
   .project-details-container {
-    padding-right: unset;
+    margin-right: unset;
+    width: unset;
   }
 }
 
@@ -1001,6 +1009,7 @@ a.showMore.showLess::after {
     font-size: 1.625rem;
     font-family: rubik-reg;
     margin-bottom: 1rem;
+    line-height: 1.5;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1118,6 +1127,7 @@ a.showMore.showLess::after {
     font-size: 1.25rem;
     font-family: rubik-reg;
     margin-bottom: 1rem;
+    line-height: 1.5;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

@@ -404,7 +404,7 @@
     }
 
     @include mobile {
-      @include h3-mobile;
+      @include h4-mobile;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -412,10 +412,12 @@
   }
 
   &-details-container {
-    padding-right: 3rem;
+    margin-right: 3rem;
+    width: 516px;
 
     @include tablet {
-      padding-right: unset;
+      margin-right: unset;
+      width: unset;
     }
   }
 

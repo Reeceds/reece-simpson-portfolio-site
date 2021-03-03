@@ -86,16 +86,26 @@
 @mixin h1-mobile {
   font-size: 2.1rem;
   font-family: rubik-reg;
+  line-height: 1.5;
 }
 
 @mixin h2-mobile {
   font-size: 1.625rem;
   font-family: rubik-reg;
   margin-bottom: 1rem;
+  line-height: 1.5;
 }
 
 @mixin h3-mobile {
   font-size: 1.25rem;
   font-family: rubik-reg;
   margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+@mixin h4-mobile {
+  font-size: 1.125rem;
+  font-family: rubik-reg;
+  margin-bottom: 1rem;
+  line-height: 1.5rem;
 }
