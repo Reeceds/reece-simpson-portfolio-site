@@ -501,7 +501,7 @@
   }
 
   &-image {
-    height: 19rem;
+    width: 100%;
 
     @include tablet {
       margin-bottom: 1rem;
@@ -509,7 +509,9 @@
 
     @include mobile {
       width: 100%;
-      height: auto;
+    }
+
+    &-container {
       max-width: 23.71375rem;
     }
   }

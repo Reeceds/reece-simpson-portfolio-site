@@ -929,7 +929,7 @@ a.showMore.showLess::after {
 }
 
 .project-image {
-  height: 19rem;
+  width: 100%;
 }
 
 @media screen and (max-width: 1089px) {
@@ -941,9 +941,11 @@ a.showMore.showLess::after {
 @media screen and (max-width: 767px) {
   .project-image {
     width: 100%;
-    height: auto;
-    max-width: 23.71375rem;
   }
+}
+
+.project-image-container {
+  max-width: 23.71375rem;
 }
 
 .project-divider {

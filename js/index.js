@@ -34,19 +34,18 @@ ScrollReveal().reveal(".slide-up-three", slideUp(500));
 ScrollReveal().reveal(".slide-up-four", slideUp(750));
 
 // Skills section view more ///////////////////////////
-jQuery(document).ready(function () {
-  // If more than 4  skill-collection-container, hide the remaining
-  $(".skill-collection-container .skill-individual-container")
-    .slice(0, 4)
-    .addClass("shown");
 
+// If more than 4  skill-collection-container, hide the remaining
+$(".skill-collection-container .skill-individual-container")
+  .slice(0, 4)
+  .addClass("shown");
+
+$(".skill-collection-container .skill-individual-container")
+  .not(".shown")
+  .hide();
+$(".showMore").on("click", function () {
   $(".skill-collection-container .skill-individual-container")
     .not(".shown")
-    .hide();
-  $(".showMore").on("click", function () {
-    $(".skill-collection-container .skill-individual-container")
-      .not(".shown")
-      .toggle(300);
-    $(this).toggleClass("showLess");
-  });
+    .toggle(300);
+  $(this).toggleClass("showLess");
 });
