@@ -1,51 +1,33 @@
-const slideUpIcon = {
-  distance: "50%",
-  origin: "bottom",
-  opacity: 0,
-  duration: 1750,
-};
+// Skills dropdown section
+$(".skill-individual-container").each(function (i, skill) {
+  if (i > 3) {
+    $(skill).addClass("hide-skill");
+  }
+});
 
-const slideUpBtn = {
-  distance: "50%",
-  origin: "bottom",
-  opacity: 0,
-  duration: 1500,
-  delay: 750,
-};
+$(".view-more-btn").on("click", function () {
+  $(".skill-individual-container").each(function (i, skill) {
+    if (i > 3) {
+      $(this).toggleClass("hide-skill");
+    }
+  });
 
-const slideUp = (delay) => {
-  return {
-    // distance: "50%",
-    origin: "bottom",
-    opacity: 0,
-    duration: 1500,
-    delay: delay,
-  };
-};
+  if ($(".view-more-btn").html() === "View more") {
+    $(".view-more-btn").html("View less");
+  } else {
+    $(".view-more-btn").html("View more");
+  }
+});
 
-// header
-ScrollReveal().reveal(".slide-up-btn", slideUpBtn);
-ScrollReveal().reveal(".slide-up-icon", slideUpIcon);
+// Click hero button to scroll
+function scrollToSection(section) {
+  $("html,body").animate({ scrollTop: $(section).offset().top });
+}
 
-// skills
-ScrollReveal().reveal(".slide-up-one", slideUp(0));
-ScrollReveal().reveal(".slide-up-two", slideUp(250));
-ScrollReveal().reveal(".slide-up-three", slideUp(500));
-ScrollReveal().reveal(".slide-up-four", slideUp(750));
+$(".js-hero-about-me-btn").click(function () {
+  scrollToSection("#about-me");
+});
 
-// Skills section view more ///////////////////////////
-
-// If more than 4  skill-collection-container, hide the remaining
-$(".skill-collection-container .skill-individual-container")
-  .slice(0, 4)
-  .addClass("shown");
-
-$(".skill-collection-container .skill-individual-container")
-  .not(".shown")
-  .hide();
-$(".showMore").on("click", function () {
-  $(".skill-collection-container .skill-individual-container")
-    .not(".shown")
-    .toggle(300);
-  $(this).toggleClass("showLess");
+$(".js-hero-projects-btn").click(function () {
+  scrollToSection("#projects");
 });

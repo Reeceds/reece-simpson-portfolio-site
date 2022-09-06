@@ -139,17 +139,13 @@ input:focus {
   font-size: 0.875rem;
 }
 
-a.showMore {
+.view-more-btn {
   text-align: center;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
-a.showMore::after {
-  content: "view more";
-}
-
-a.showMore.showLess::after {
-  content: "view less";
+.hide-skill {
+  display: none !important;
 }
 
 @font-face {
@@ -343,6 +339,9 @@ a.showMore.showLess::after {
 }
 
 .hero-icons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: 3.5rem;
 }
 
@@ -352,9 +351,12 @@ a.showMore.showLess::after {
   }
 }
 
+.hero-icons-container a {
+  margin-right: 2.5rem;
+}
+
 .hero-contact-icons {
   height: 3.5rem;
-  margin-right: 2.5rem;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }

@@ -99,15 +99,11 @@ input:focus {
   font-size: 0.875rem;
 }
 
-a.showMore {
+.view-more-btn {
   text-align: center;
-  text-decoration: none;
+  text-decoration: none !important;
+}
 
-  &::after {
-    content: "view more";
-  }
-
-  &.showLess::after {
-    content: "view less";
-  }
+.hide-skill {
+  display: none !important;
 }
