@@ -21,7 +21,7 @@ $(".view-more-btn").on("click", function () {
 
 // Click hero button to scroll
 function scrollToSection(section) {
-    $("html,body").animate({ scrollTop: $(section).offset().top });
+    $("html, body").animate({ scrollTop: $(section).offset().top });
 }
 
 $(".js-hero-about-me-btn").click(function () {
@@ -34,4 +34,19 @@ $(".js-hero-projects-btn").click(function () {
 
 $(".js-email-icon").click(function () {
     scrollToSection("#message-me");
+});
+
+// Scroll top
+window.onscroll = function () {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        $(".scroll-top_btn").show();
+    } else {
+        $(".scroll-top_btn").hide();
+    }
+};
+
+var aTag = $("body");
+
+$("#js-scroll-top").on("click", function () {
+    $("html, body").animate({ scrollTop: aTag.offset().top }, "fast");
 });

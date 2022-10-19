@@ -3,712 +3,738 @@
 @import "./partials/mixins";
 @import "./partials/typography";
 
+// Scroll top
+.scroll-top {
+    &_btn {
+        display: none;
+        padding: 10px 20px;
+        background-color: #cb2d6f;
+        position: fixed;
+        bottom: 0;
+        z-index: 50;
+        right: 50px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        cursor: pointer;
+    }
+
+    &_icon {
+        height: 40px;
+        transform: scaleY(-1);
+    }
+
+    p {
+        color: #fff;
+        font-weight: bold;
+    }
+}
+
 // Hero section
 .hero {
-  background-color: $dark-green;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-  @include mobile {
-    height: unset;
-    padding: 3rem 0;
-  }
-
-  &-container {
+    background-color: $dark-green;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-  }
-
-  &-text-container {
-    max-width: 47rem;
-    margin-bottom: 3rem;
 
     @include mobile {
-      margin-bottom: 2rem;
-    }
-  }
-
-  &-heading {
-    @include h1-desktop;
-    color: $secondary-text;
-    margin-bottom: 1.75rem;
-
-    @include mobile {
-      margin-bottom: 1rem;
-      @include h1-mobile;
-      display: flex;
-      flex-wrap: wrap;
-    }
-  }
-
-  &-text {
-    color: $secondary-text;
-    @include hero-text-desktop;
-
-    @include mobile {
-      @include hero-text-mobile;
-      margin-bottom: unset;
-    }
-  }
-
-  &-btn-container {
-    display: flex;
-    flex-direction: row;
-
-    @include mobile {
-      flex-direction: column;
-      max-width: 25rem;
-      margin-bottom: 1.125rem;
-    }
-  }
-
-  &-btn {
-    background-color: unset;
-    border-radius: 3rem;
-    transition: 0.25s ease-in-out;
-    margin-right: 2rem;
-
-    @include mobile {
-      width: 100%;
-      margin-right: unset;
-    }
-  }
-
-  &-btn-green {
-    border: 2px solid $light-green;
-
-    &:hover {
-      background-color: $light-green;
-      color: $dark-green;
-      cursor: pointer;
+        height: unset;
+        padding: 3rem 0;
     }
 
-    &:active {
-      background-color: unset;
-      color: $secondary-text;
+    &-container {
+        flex-direction: column;
     }
 
-    @include mobile {
-      margin-bottom: 1.5rem;
-    }
-  }
+    &-text-container {
+        max-width: 47rem;
+        margin-bottom: 3rem;
 
-  &-btn-pink {
-    border: 2px solid $light-pink;
-
-    &:hover {
-      background-color: $light-pink;
-      color: $dark-green;
-      cursor: pointer;
+        @include mobile {
+            margin-bottom: 2rem;
+        }
     }
 
-    &:active {
-      background-color: unset;
-      color: $secondary-text;
-    }
-  }
+    &-heading {
+        @include h1-desktop;
+        color: $secondary-text;
+        margin-bottom: 1.75rem;
 
-  &-icons-container {
-    display: flex;
-    margin-bottom: 3.5rem;
-
-    @include mobile {
-      margin-bottom: 2.5rem;
-    }
-  }
-
-  &-icons-container a {
-    margin-right: 2.5rem;
-  }
-
-  &-contact-icons {
-    height: 3.5rem;
-    transition: 0.5s ease;
-
-    @include mobile {
-      height: 2.75rem;
-      margin-right: 1.25rem;
+        @include mobile {
+            margin-bottom: 1rem;
+            @include h1-mobile;
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
 
-    &:hover {
-      opacity: 0.5;
-      cursor: pointer;
-    }
-  }
+    &-text {
+        color: $secondary-text;
+        @include hero-text-desktop;
 
-  &-arrow-icom {
-    height: 4rem;
-    position: absolute;
-    bottom: 20px;
-    animation: mymove 1.5s infinite;
+        @include mobile {
+            @include hero-text-mobile;
+            margin-bottom: unset;
+        }
+    }
 
-    @include mobile {
-      display: none;
-    }
-  }
+    &-btn-container {
+        display: flex;
+        flex-direction: row;
 
-  @keyframes mymove {
-    0% {
-      opacity: 0;
+        @include mobile {
+            flex-direction: column;
+            max-width: 25rem;
+            margin-bottom: 1.125rem;
+        }
     }
-    50% {
-      opacity: 1;
+
+    &-btn {
+        background-color: unset;
+        border-radius: 3rem;
+        transition: 0.25s ease-in-out;
+        margin-right: 2rem;
+
+        @include mobile {
+            width: 100%;
+            margin-right: unset;
+        }
     }
-    100% {
-      opacity: 0;
+
+    &-btn-green {
+        border: 2px solid $light-green;
+
+        &:hover {
+            background-color: $light-green;
+            color: $dark-green;
+            cursor: pointer;
+        }
+
+        &:active {
+            background-color: unset;
+            color: $secondary-text;
+        }
+
+        @include mobile {
+            margin-bottom: 1.5rem;
+        }
     }
-  }
+
+    &-btn-pink {
+        border: 2px solid $light-pink;
+
+        &:hover {
+            background-color: $light-pink;
+            color: $dark-green;
+            cursor: pointer;
+        }
+
+        &:active {
+            background-color: unset;
+            color: $secondary-text;
+        }
+    }
+
+    &-icons-container {
+        display: flex;
+        margin-bottom: 3.5rem;
+
+        @include mobile {
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    &-icons-container a {
+        margin-right: 2.5rem;
+    }
+
+    &-contact-icons {
+        height: 3.5rem;
+        transition: 0.5s ease;
+
+        @include mobile {
+            height: 2.75rem;
+            margin-right: 1.25rem;
+        }
+
+        &:hover {
+            opacity: 0.5;
+            cursor: pointer;
+        }
+    }
+
+    &-arrow-icom {
+        height: 4rem;
+        position: absolute;
+        bottom: 20px;
+        animation: mymove 1.5s infinite;
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    @keyframes mymove {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
 }
 
 // About section
 .about-me {
-  display: flex;
-  padding: 6rem 0;
-  justify-content: center;
-  align-items: center;
-
-  @include mobile {
-    padding: 3rem 0;
-  }
-
-  &-container {
-    justify-content: flex-end;
-  }
-
-  &-image {
-    min-width: 20rem;
-    max-width: 20rem;
-    margin-right: 5rem;
-
-    @include tablet {
-      display: none;
-    }
-  }
-
-  &-text-container {
-    @include tablet {
-      width: unset;
-    }
-  }
-
-  &-heading {
-    @include h2-desktop;
-
-    @include tablet {
-      text-align: center;
-    }
+    display: flex;
+    padding: 6rem 0;
+    justify-content: center;
+    align-items: center;
 
     @include mobile {
-      @include h2-mobile;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+        padding: 3rem 0;
     }
-  }
 
-  &-text {
-    @include p-desktop;
-
-    @include mobile {
-      @include p-mobile;
+    &-container {
+        justify-content: flex-end;
     }
-  }
+
+    &-image {
+        min-width: 20rem;
+        max-width: 20rem;
+        margin-right: 5rem;
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &-text-container {
+        @include tablet {
+            width: unset;
+        }
+    }
+
+    &-heading {
+        @include h2-desktop;
+
+        @include tablet {
+            text-align: center;
+        }
+
+        @include mobile {
+            @include h2-mobile;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    &-text {
+        @include p-desktop;
+
+        @include mobile {
+            @include p-mobile;
+        }
+    }
 }
 
 // Skills section
 .skill {
-  display: flex;
-  padding: 6rem 0;
-  justify-content: center;
-  align-items: center;
-  background-color: $grey;
-
-  @include mobile {
-    padding: 3rem 0;
-  }
-
-  &-section-container {
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  &-section-heading {
-    @include h2-desktop;
-    margin-bottom: 2rem;
-
-    @include mobile {
-      @include h2-mobile;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  }
-
-  &-collection-container {
     display: flex;
-    flex-wrap: wrap;
+    padding: 6rem 0;
     justify-content: center;
     align-items: center;
-    max-width: 1000px;
-    margin-bottom: 1rem;
-  }
-
-  &-individual-container {
-    display: flex;
-    flex-direction: column;
-    width: 14.4rem;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 2rem;
+    background-color: $grey;
 
     @include mobile {
-      margin-bottom: 1.5rem;
-    }
-  }
-
-  &-icon-container {
-    width: 7rem;
-    height: 6rem;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1rem;
-
-    @include mobile {
-      height: 5rem;
-    }
-  }
-
-  &-icon {
-    width: 100%;
-  }
-
-  &-name {
-    @include tags-desktop;
-
-    @include mobile {
-      @include tags-mobile;
-    }
-  }
-
-  &-btn-green {
-    background-color: $light-green;
-    border-radius: 3rem;
-    transition: 0.25s ease-in-out;
-    border: 2px solid $light-green;
-    margin: 0 auto;
-
-    &:hover {
-      background-color: unset;
-      color: $light-green;
-      cursor: pointer;
+        padding: 3rem 0;
     }
 
-    &:active {
-      background-color: $light-green;
-      color: $secondary-text;
+    &-section-container {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
 
-    @include mobile {
-      width: 100%;
+    &-section-heading {
+        @include h2-desktop;
+        margin-bottom: 2rem;
+
+        @include mobile {
+            @include h2-mobile;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
-  }
+
+    &-collection-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        max-width: 1000px;
+        margin-bottom: 1rem;
+    }
+
+    &-individual-container {
+        display: flex;
+        flex-direction: column;
+        width: 14.4rem;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+
+        @include mobile {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &-icon-container {
+        width: 7rem;
+        height: 6rem;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+
+        @include mobile {
+            height: 5rem;
+        }
+    }
+
+    &-icon {
+        width: 100%;
+    }
+
+    &-name {
+        @include tags-desktop;
+
+        @include mobile {
+            @include tags-mobile;
+        }
+    }
+
+    &-btn-green {
+        background-color: $light-green;
+        border-radius: 3rem;
+        transition: 0.25s ease-in-out;
+        border: 2px solid $light-green;
+        margin: 0 auto;
+
+        &:hover {
+            background-color: unset;
+            color: $light-green;
+            cursor: pointer;
+        }
+
+        &:active {
+            background-color: $light-green;
+            color: $secondary-text;
+        }
+
+        @include mobile {
+            width: 100%;
+        }
+    }
 }
 
 // Projects section
 .project {
-  display: flex;
-  padding: 6rem 0 7rem 0;
-  justify-content: center;
-  align-items: center;
-  background-color: $dark-pink;
-
-  @include mobile {
-    padding: 3rem 0 4rem 0;
-  }
-
-  &-section-container {
-    flex-direction: column;
-  }
-
-  &-section-heading {
-    @include h2-desktop;
-    color: $secondary-text;
-    margin-bottom: 3rem;
-    text-align: center;
-
-    @include tablet {
-      text-align: center;
-    }
-
-    @include mobile {
-      @include h2-mobile;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-bottom: 1.5rem;
-    }
-  }
-
-  &-collection-container {
-    background-color: $secondary-text;
-    border-radius: 3rem;
-    padding: 4rem 0;
-    width: 100%;
-
-    @include tablet {
-      padding: 4rem 0;
-    }
-
-    @include mobile {
-      padding: 2.5rem 0;
-    }
-  }
-
-  &-individual-container {
     display: flex;
-    padding-left: 4rem;
-    padding-right: 4rem;
-
-    @include tablet {
-      flex-wrap: wrap-reverse;
-      justify-content: center;
-      padding-left: 4rem;
-      padding-right: 4rem;
-    }
+    padding: 6rem 0 7rem 0;
+    justify-content: center;
+    align-items: center;
+    background-color: $dark-pink;
 
     @include mobile {
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-    }
-  }
-
-  &-heading {
-    @include h3-desktop;
-
-    @include tablet {
-      text-align: center;
+        padding: 3rem 0 4rem 0;
     }
 
-    @include mobile {
-      @include h3-mobile;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  }
-
-  &-tech {
-    @include h4-desktop;
-
-    @include tablet {
-      text-align: center;
+    &-section-container {
+        flex-direction: column;
     }
 
-    @include mobile {
-      @include h4-mobile;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  }
+    &-section-heading {
+        @include h2-desktop;
+        color: $secondary-text;
+        margin-bottom: 3rem;
+        text-align: center;
 
-  &-details-container {
-    margin-right: 3rem;
-    width: 516px;
+        @include tablet {
+            text-align: center;
+        }
 
-    @include tablet {
-      margin-right: unset;
-      width: unset;
-    }
-  }
-
-  &-text-container {
-    min-height: 18.75rem;
-
-    @include tablet {
-      min-height: 15.75rem;
+        @include mobile {
+            @include h2-mobile;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
     }
 
-    @include mobile {
-      height: unset;
-    }
-  }
+    &-collection-container {
+        background-color: $secondary-text;
+        border-radius: 3rem;
+        padding: 4rem 0;
+        width: 100%;
 
-  &-description {
-    margin-bottom: 1.75rem;
-  }
+        @include tablet {
+            padding: 4rem 0;
+        }
 
-  &-btn-container {
-    display: flex;
-
-    @include tablet {
-      justify-content: center;
-    }
-
-    @include mobile {
-      flex-direction: column;
-      max-width: 25rem;
-      margin: 0 auto;
-    }
-  }
-
-  &-btn-green {
-    margin-right: 2rem;
-    background-color: $light-green;
-    border-radius: 3rem;
-    transition: 0.25s ease-in-out;
-    border: 2px solid $light-green;
-    min-width: 11.5rem;
-
-    &:hover {
-      background-color: unset;
-      color: $light-green;
-      cursor: pointer;
+        @include mobile {
+            padding: 2.5rem 0;
+        }
     }
 
-    &:active {
-      background-color: $light-green;
-      color: $secondary-text;
+    &-individual-container {
+        display: flex;
+        padding-left: 4rem;
+        padding-right: 4rem;
+
+        @include tablet {
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
+
+        @include mobile {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
     }
 
-    @include mobile {
-      margin-right: unset;
-      width: 100%;
-      margin-bottom: 1rem;
-    }
-  }
+    &-heading {
+        @include h3-desktop;
 
-  &-btn-pink {
-    background-color: $light-pink;
-    border-radius: 3rem;
-    transition: 0.25s ease-in-out;
-    border: 2px solid $light-pink;
-    min-width: 11.5rem;
+        @include tablet {
+            text-align: center;
+        }
 
-    &:hover {
-      background-color: unset;
-      color: $light-pink;
-      cursor: pointer;
+        @include mobile {
+            @include h3-mobile;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 
-    &:active {
-      background-color: $light-pink;
-      color: $secondary-text;
+    &-tech {
+        @include h4-desktop;
+
+        @include tablet {
+            text-align: center;
+        }
+
+        @include mobile {
+            @include h4-mobile;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 
-    @include mobile {
-      width: 100%;
-    }
-  }
+    &-details-container {
+        margin-right: 3rem;
+        width: 516px;
 
-  &-image {
-    width: 100%;
-
-    @include tablet {
-      margin-bottom: 1rem;
+        @include tablet {
+            margin-right: unset;
+            width: unset;
+        }
     }
 
-    @include mobile {
-      width: 100%;
+    &-text-container {
+        min-height: 18.75rem;
+
+        @include tablet {
+            min-height: 15.75rem;
+        }
+
+        @include mobile {
+            height: unset;
+        }
     }
 
-    &-container {
-      max-width: 23.71375rem;
+    &-description {
+        margin-bottom: 1.75rem;
     }
-  }
 
-  &-divider {
-    height: 1px;
-    background-color: lightgrey;
-    margin-bottom: 4rem;
-    margin-top: 3rem;
+    &-btn-container {
+        display: flex;
 
-    @include mobile {
-      margin: 3rem 0;
+        @include tablet {
+            justify-content: center;
+        }
+
+        @include mobile {
+            flex-direction: column;
+            max-width: 25rem;
+            margin: 0 auto;
+        }
     }
-  }
+
+    &-btn-green {
+        margin-right: 2rem;
+        background-color: $light-green;
+        border-radius: 3rem;
+        transition: 0.25s ease-in-out;
+        border: 2px solid $light-green;
+        min-width: 11.5rem;
+
+        &:hover {
+            background-color: unset;
+            color: $light-green;
+            cursor: pointer;
+        }
+
+        &:active {
+            background-color: $light-green;
+            color: $secondary-text;
+        }
+
+        @include mobile {
+            margin-right: unset;
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &-btn-pink {
+        background-color: $light-pink;
+        border-radius: 3rem;
+        transition: 0.25s ease-in-out;
+        border: 2px solid $light-pink;
+        min-width: 11.5rem;
+
+        &:hover {
+            background-color: unset;
+            color: $light-pink;
+            cursor: pointer;
+        }
+
+        &:active {
+            background-color: $light-pink;
+            color: $secondary-text;
+        }
+
+        @include mobile {
+            width: 100%;
+        }
+    }
+
+    &-image {
+        width: 100%;
+
+        @include tablet {
+            margin-bottom: 1rem;
+        }
+
+        @include mobile {
+            width: 100%;
+        }
+
+        &-container {
+            max-width: 23.71375rem;
+        }
+    }
+
+    &-divider {
+        height: 1px;
+        background-color: lightgrey;
+        margin-bottom: 4rem;
+        margin-top: 3rem;
+
+        @include mobile {
+            margin: 3rem 0;
+        }
+    }
 }
 
 // Contact section
 .contact {
-  display: flex;
-  padding: 6rem 0 7rem 0;
-  justify-content: center;
-  align-items: center;
-  background-color: $light-green;
-
-  @include mobile {
-    padding: 3rem 0 4rem 0;
-  }
-
-  &-section-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  &-section-heading {
-    @include h2-desktop;
-    color: $secondary-text;
-    margin-bottom: 3rem;
-    text-align: center;
-
-    @include tablet {
-      text-align: center;
-    }
-
-    @include mobile {
-      @include h2-mobile;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-bottom: 1.5rem;
-    }
-  }
-
-  &-form {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 800px;
-
-    @include tablet {
-      width: 100%;
-      max-width: 800px;
-    }
-  }
-
-  &-input-field {
-    width: 48.75%;
+    padding: 6rem 0 7rem 0;
+    justify-content: center;
+    align-items: center;
+    background-color: $light-green;
 
     @include mobile {
-      width: 100%;
-    }
-  }
-
-  &-input-message-field {
-    width: 100%;
-    resize: none;
-  }
-
-  &-btn-pink {
-    background-color: $light-pink;
-    border-radius: 3rem;
-    transition: 0.25s ease-in-out;
-    border: 2px solid $light-pink;
-    margin: 0 auto;
-    margin-top: 1rem;
-
-    &:hover {
-      background-color: unset;
-      color: $light-pink;
-      cursor: pointer;
+        padding: 3rem 0 4rem 0;
     }
 
-    &:active {
-      background-color: $light-pink;
-      color: $secondary-text;
+    &-section-container {
+        flex-direction: column;
+        align-items: center;
     }
 
-    @include mobile {
-      width: 100%;
+    &-section-heading {
+        @include h2-desktop;
+        color: $secondary-text;
+        margin-bottom: 3rem;
+        text-align: center;
+
+        @include tablet {
+            text-align: center;
+        }
+
+        @include mobile {
+            @include h2-mobile;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
     }
-  }
+
+    &-form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 800px;
+
+        @include tablet {
+            width: 100%;
+            max-width: 800px;
+        }
+    }
+
+    &-input-field {
+        width: 48.75%;
+
+        @include mobile {
+            width: 100%;
+        }
+    }
+
+    &-input-message-field {
+        width: 100%;
+        resize: none;
+    }
+
+    &-btn-pink {
+        background-color: $light-pink;
+        border-radius: 3rem;
+        transition: 0.25s ease-in-out;
+        border: 2px solid $light-pink;
+        margin: 0 auto;
+        margin-top: 1rem;
+
+        &:hover {
+            background-color: unset;
+            color: $light-pink;
+            cursor: pointer;
+        }
+
+        &:active {
+            background-color: $light-pink;
+            color: $secondary-text;
+        }
+
+        @include mobile {
+            width: 100%;
+        }
+    }
 }
 
 // Footer section
 .footer {
-  flex-direction: column;
-  display: flex;
-  padding: 3rem 0;
-  justify-content: center;
-  align-items: center;
-  background-color: $dark-green;
-
-  &-container {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-  }
-
-  &-heading {
-    @include h3-desktop;
-    color: $secondary-text;
-    margin-bottom: 1.5rem;
-
-    @include mobile {
-      @include h3-mobile;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-bottom: 1.5rem;
-    }
-  }
-
-  &-icon-container {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    max-width: 19rem;
-    margin-bottom: 1.75rem;
-    width: 100%;
-  }
-
-  &-icon {
-    height: 60%;
-  }
-
-  &-icon-circle {
-    background-color: #ffffff;
-    border-radius: 100%;
-    width: 3rem;
-    height: 3rem;
-    display: flex;
+    padding: 3rem 0;
     justify-content: center;
     align-items: center;
-    transition: 0.5s ease;
+    background-color: $dark-green;
 
-    &:hover {
-      opacity: 0.5;
-      cursor: pointer;
+    &-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-  }
 
-  &-email {
-    @include tags-desktop;
-    color: $secondary-text;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    &-heading {
+        @include h3-desktop;
+        color: $secondary-text;
+        margin-bottom: 1.5rem;
 
-    @include mobile {
-      @include tags-mobile;
+        @include mobile {
+            @include h3-mobile;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
     }
-  }
+
+    &-icon-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 19rem;
+        margin-bottom: 1.75rem;
+        width: 100%;
+    }
+
+    &-icon {
+        height: 60%;
+    }
+
+    &-icon-circle {
+        background-color: #ffffff;
+        border-radius: 100%;
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s ease;
+
+        &:hover {
+            opacity: 0.5;
+            cursor: pointer;
+        }
+    }
+
+    &-email {
+        @include tags-desktop;
+        color: $secondary-text;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        @include mobile {
+            @include tags-mobile;
+        }
+    }
 }
 
 .carousel-control-container {
-  display: flex;
-  position: relative;
-  justify-content: center;
-  margin-top: 2rem;
-
-  @include tablet {
-    margin-top: 3rem;
-  }
-
-  @include mobile {
+    display: flex;
+    position: relative;
+    justify-content: center;
     margin-top: 2rem;
-  }
+
+    @include tablet {
+        margin-top: 3rem;
+    }
+
+    @include mobile {
+        margin-top: 2rem;
+    }
 }
 
 .carousel-control-next,
 .carousel-control-prev {
-  position: unset;
-  width: 6rem;
-  min-width: 5rem;
+    position: unset;
+    width: 6rem;
+    min-width: 5rem;
 }
 
 .container,
@@ -716,10 +742,10 @@
 .container-md,
 .container-sm,
 .container-xl {
-  max-width: unset;
+    max-width: unset;
 }
 
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
-  filter: invert(1);
+    filter: invert(1);
 }
