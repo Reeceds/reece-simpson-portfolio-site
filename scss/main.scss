@@ -85,7 +85,6 @@
 
         @include mobile {
             flex-direction: column;
-            max-width: 25rem;
             margin-bottom: 1.125rem;
         }
     }
@@ -147,6 +146,10 @@
 
     &-icons-container a {
         margin-right: 2.5rem;
+
+        @include mobile {
+            margin-right: unset;
+        }
     }
 
     &-contact-icons {
