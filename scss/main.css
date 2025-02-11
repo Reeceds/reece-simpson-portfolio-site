@@ -323,23 +323,11 @@ input:focus {
   height: 4rem;
   position: absolute;
   bottom: 20px;
-  -webkit-animation: mymove 1.5s infinite;
-          animation: mymove 1.5s infinite;
+  animation: mymove 1.5s infinite;
 }
 @media screen and (max-width: 767px) {
   .hero-arrow-icom {
     display: none;
-  }
-}
-@-webkit-keyframes mymove {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
   }
 }
 @keyframes mymove {
